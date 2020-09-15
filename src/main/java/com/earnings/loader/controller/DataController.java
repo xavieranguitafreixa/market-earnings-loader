@@ -32,7 +32,7 @@ public class DataController {
 	
 	@PostMapping("/load")
 	public ResponseEntity<ResponseMessage> uploadFile(@RequestParam("file") MultipartFile file) {
-		String message = "";
+		String message;
 		
 		if (DataHelper.hasCSVFormat(file)) {
 			try {

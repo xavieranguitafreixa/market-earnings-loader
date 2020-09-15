@@ -31,9 +31,8 @@ public class DataService {
 	
 	public ByteArrayInputStream load() {
 		List<Earning> earnings = repository.findAll();
-		
-		ByteArrayInputStream in = DataHelper.earningsToCSV(earnings);
-		return in;
+
+		return DataHelper.earningsToCSV(earnings);
 	}
 	
 	public List<Earning> getAllEarnings() {

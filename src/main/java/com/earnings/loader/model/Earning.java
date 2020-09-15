@@ -45,17 +45,6 @@ public class Earning {
 		this.previousClose = previousClose;
 	}
 
-	public Earning(Long id, String announcementTime, String company, String exchange, String symbol, String currency, String term, float previousClose) {
-		this.id = id;
-		this.announcementTime = announcementTime;
-		this.company = company;
-		this.exchange = exchange;
-		this.symbol = symbol;
-		this.currency = currency;
-		this.term = term;
-		this.previousClose = previousClose;
-	}
-
 	public long getId() { return id; }
 
 	public void setId(long id) { this.id = id; }
