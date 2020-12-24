@@ -3,6 +3,7 @@ package com.earnings.loader.controller;
 import java.util.List;
 
 import com.earnings.loader.model.Earning;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.Resource;
@@ -25,6 +26,7 @@ import com.earnings.loader.service.DataService;
 @CrossOrigin("*")
 @Controller
 @RequestMapping("/earnings/loader/csv")
+@Api(value = "Data microservice", description = "API for getting and saving data")
 public class DataController {
 
 	@Autowired
